@@ -65,4 +65,4 @@ melted <- melt(subsetData, id=c("SubjectNumber", "Activity"))
 cast <- dcast(melted, SubjectNumber + Activity ~ variable, mean)
 
 ## save new data frame
-write.table(cast1, "tidydata.txt", sep=",")
+write.table(cast, "tidydata.txt", sep=",")
